@@ -64,24 +64,67 @@ inquirer
   .then((data) => {
     console.log(data);
 
-    const ReadMe.MD = `${data.name.toLowerCase().split(' ').join('')}.json`;
+    const ReadMe =
 
-    fs.writeFile('ReadMe.MD', 'utf8', (error, data) =>
-  error ? console.error(error) : console.log(data)
-);
+      ` # ${title}
+
+    ## Description
+    
+    ${description}
+
+
+    ## Table of Contents
+
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [Tests](#tests)
+    - [License](#license)
+
+    ## Installation
+
+    ${installation}
+
+    ## Usage
+
+    ${usage}
+
+    ## Contributions
+
+    ${contribute}
+
+    ## Tests
+
+    ${test}
+
+    ## Contact Me 
+
+    ${email}
+
+    ## Check out my GitHub
+
+    https://github.com/${github}  
+    
+    
+    
+    `;
+
+    fs.writeFile(ReadMe.MD, 'utf8', (error, data) =>
+      error ? console.error(error) : console.log(data)
+    );
   });
 
 
-  // TODO: Include packages needed for this application
+// TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
 const questions = [];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();
