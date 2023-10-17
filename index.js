@@ -13,6 +13,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+
 inquirer
   .prompt([
     {
@@ -65,66 +66,52 @@ inquirer
     console.log(data);
 
     const ReadMe =
+    `
+    # ${data.title}
 
-      ` # ${title}
-
-    ## Description
+    ## Description    
+        ${data.description}
     
-    ${description}
-
-
+    
     ## Table of Contents
-
+    
+    
     - [Installation](#installation)
     - [Usage](#usage)
     - [Credits](#credits)
     - [Tests](#tests)
     - [License](#license)
-
+    - [Contact](#Contact)
+    - [GitHub](#GitHub)
+    
     ## Installation
-
-    ${installation}
-
+    
+        ${data.installation}
+    
     ## Usage
-
-    ${usage}
-
+    
+        ${data.usage}
+    
     ## Contributions
-
-    ${contribute}
-
+    
+        ${data.contribute}
+    
     ## Tests
-
-    ${test}
-
+    
+        ${data.test}
+    
     ## Contact Me 
-
-    ${email}
-
+    
+        ${data.email}
+    
     ## Check out my GitHub
-
-    https://github.com/${github}  
     
-    
-    
+    https://github.com/${data.github}  
+     
+  
     `;
 
-    fs.writeFile(ReadMe.MD, 'utf8', (error, data) =>
-      error ? console.error(error) : console.log(data)
+    fs.writeFile('README.md', ReadMe, (error) =>
+      error ? console.error(error) : console.log('sucess')
     );
   });
-
-
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
-init();
