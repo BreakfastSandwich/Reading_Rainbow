@@ -66,49 +66,46 @@ inquirer
     console.log(data);
 
     const ReadMe =
-    `
-    # ${data.title}
+`# ${data.title}
 
-    ## Description    
-        ${data.description}
+## Description    
+${data.description}
     
     
-    ## Table of Contents
+## Table of Contents
     
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [Tests](#tests)
-    - [License](#license)
-    - [Contact](#Contact)
-    - [GitHub](#GitHub)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Tests](#tests)
+- [License](#license)
+- [Contact](#Contact)
+- [GitHub](#GitHub)
     
-    ## Installation
+## Installation
     
-        ${data.installation}
+${data.installation}
     
-    ## Usage
+## Usage
     
-        ${data.usage}
+ ${data.usage}
     
-    ## Contributions
+## Contributions
     
-        ${data.contribute}
+${data.contribute}
     
-    ## Tests
+## Tests
     
-        ${data.test}
+${data.test}
     
-    ## Contact Me 
+## Contact Me 
     
-        ${data.email}
+${data.contact}
     
-    ## Check out my GitHub
+## Check out my GitHub
     
-    https://github.com/${data.github}  
-     
-  
+https://github.com/${data.github}   
     `;
 
     fs.writeFile('README.md', ReadMe, (error) =>
