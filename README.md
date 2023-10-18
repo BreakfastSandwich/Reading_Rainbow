@@ -1,7 +1,7 @@
-# 
+# Reading Rainbow
 
 ## Description    
-
+ReadMe file generator
     
     
 ## Table of Contents
@@ -17,25 +17,25 @@
     
 ## Installation
     
-
+none
     
 ## Usage
     
- 
+ this project prompta a user through a series of questions to generate a README.md
     
 ## Contributions
     
-
+no
     
 ## Tests
     
-
+none
     
 ## Contact Me 
     
-
+none
     
 ## Check out my GitHub
     
-https://github.com/   
+https://github.com/BreakfastSandwich   
     
